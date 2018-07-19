@@ -1,17 +1,9 @@
 <context>
-    <var name="UserName" value="$Text" scope="user"/>
+     <var name="number" value="$Text"/>
         <output value="Привет, этот навык ответит на твой вопрос ответом "Да" или "Нет", случайно сгенерированным с помощью сервиса Random.org, который использует космический шум для нахождения практически неподбираемого случайного числа." />
         <output value="Что-ж, я жду вашего вопроса." />
-    
-    
-    
-  
-<var name="number" value="$Text" scope="user"/>
-</var>
-
-<input pattern="*">
-    <get url="hhttps://www.random.org/integers/?num=1&min=1&max=2&col=1&base=10&format=plain&rnd=new" var="number">
-    </get>
+    <input pattern="*">
+    <get url="hhttps://www.random.org/integers/?num=1&min=1&max=2&col=1&base=10&format=plain&rnd=new" var="number"/>
     <output value="Ответ на твой вопрос - Да." if=$number == "1"/>
     <output value="Ответ на твой вопрос - Нет." if=$number == "2"/>
     </input>

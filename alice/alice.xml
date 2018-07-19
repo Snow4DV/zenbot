@@ -4,7 +4,7 @@
         <output value="Что-ж, я жду вашего вопроса." />
     <input pattern="*">
     <get url="hhttps://www.random.org/integers/?num=1&min=1&max=2&col=1&base=10&format=plain&rnd=new" var="number"/>
-    <output value="Ответ на твой вопрос - Да." if=$number == "1"/>
-    <output value="Ответ на твой вопрос - Нет." if=$number == "2"/>
+    <output value="Ответ на твой вопрос - Да." if="$number == "1""/>
+    <output value="Ответ на твой вопрос - Нет." if="$number == "2""/>
     </input>
 </context>
